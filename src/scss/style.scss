@@ -1,0 +1,60 @@
+// If you want to override variables do it here
+@import "variables";
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import CoreUI for React components library
+@import "@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "@coreui/chartjs/scss/coreui-chartjs";
+
+@import "layout";
+@import "example";
+
+// If you want to add custom CSS you can put it here.
+@import "custom";
+
+.img-thumbnail {
+  position: relative;
+  > img {
+    height: 100%;
+    width: auto;
+    border-radius: 5px;
+  }
+  .file {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    border: none;
+    bottom: 50px;
+    left: 0;
+    border-radius: 0;
+    font-size: 1vw;
+    background: #212529b8;
+    input {
+      position: absolute;
+      opacity: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.search-input {
+  position: relative;
+  > ul.list-group {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+}
+
+.float-right {
+  float: right
+}
+.h-50-px {
+  height: 50px;
+  border-radius: 6px;
+}
